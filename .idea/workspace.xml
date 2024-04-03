@@ -5,30 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/authorization/src/main/java/com/example/authorization/AuthorizationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authorization/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feedback/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kitchen/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order_management/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization/src/main/java/com/example/authorization/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization/src/main/java/com/example/authorization/exception/ApiError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization/src/main/java/com/example/authorization/exception/ErrorHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization/src/main/java/com/example/authorization/exception/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization/src/main/java/com/example/authorization/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization/src/main/java/com/example/authorization/model/dto/RequestUserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization/src/main/java/com/example/authorization/model/dto/ResponseUserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization/src/main/java/com/example/authorization/model/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization/src/main/java/com/example/authorization/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization/src/main/java/com/example/authorization/sercice/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization/src/main/java/com/example/authorization/sercice/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authorization/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authorization/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feedback/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/feedback/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kitchen/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logistic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/logistic/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order_management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/authorization/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
   <component name="ProjectId" id="2eakCTTW8Nt72Zv3dI2iPLolAZL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -37,14 +61,33 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AuthorizationApplication.executor": "Debug",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/MyProjects/Pizza_microseviceApp/order_management/src/main/resources",
-    "project.structure.last.edited": "Modules",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Denis/java-explore-with-me",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.3091954"
+    "project.structure.side.proportion": "0.3091954",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -55,11 +98,24 @@
       <recent name="C:\MyProjects\Pizza_microseviceApp\feedback\src\main\resources" />
       <recent name="C:\MyProjects\Pizza_microseviceApp\authorization\src\main\resources" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Denis\Pizza_microseviceApp" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.authorization.exception" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.FeedbackApplication">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AuthorizationApplication">
     <configuration name="AuthorizationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="authorization" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.authorization.AuthorizationApplication" />
@@ -96,6 +152,15 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.21-corretto-11.0.21-3183f394aec4-d55de845" />
+        <option value="jdk-17.0.10-corretto-17.0.10-f644763e9732-24fca987" />
+        <option value="jdk-17.0.9-corretto-17.0.9-3183f394aec4-8f899f12" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -105,6 +170,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712149949920</updated>
       <workItem from="1712149951342" duration="1944000" />
+      <workItem from="1712156852553" duration="8689000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1712150661355</created>
