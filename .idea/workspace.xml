@@ -4,31 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/authorization/src/main/java/com/example/authorization/AuthorizationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authorization/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feedback/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kitchen/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order_management/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="Исправил название пакета на service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authorization/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feedback/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/feedback/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kitchen/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logistic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/logistic/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order_management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
   <component name="ProjectId" id="2eakCTTW8Nt72Zv3dI2iPLolAZL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -37,14 +45,33 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AuthorizationApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/MyProjects/Pizza_microseviceApp/order_management/src/main/resources",
-    "project.structure.last.edited": "Modules",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Denis/java-explore-with-me",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.3091954"
+    "project.structure.side.proportion": "0.3091954",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -55,11 +82,25 @@
       <recent name="C:\MyProjects\Pizza_microseviceApp\feedback\src\main\resources" />
       <recent name="C:\MyProjects\Pizza_microseviceApp\authorization\src\main\resources" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Denis\Pizza_microseviceApp\postman" />
+      <recent name="C:\Users\Denis\Pizza_microseviceApp" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.authorization.exception" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.FeedbackApplication">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AuthorizationApplication">
     <configuration name="AuthorizationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="authorization" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.authorization.AuthorizationApplication" />
@@ -96,6 +137,15 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.21-corretto-11.0.21-3183f394aec4-d55de845" />
+        <option value="jdk-17.0.10-corretto-17.0.10-f644763e9732-24fca987" />
+        <option value="jdk-17.0.9-corretto-17.0.9-3183f394aec4-8f899f12" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -105,6 +155,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712149949920</updated>
       <workItem from="1712149951342" duration="1944000" />
+      <workItem from="1712156852553" duration="10371000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1712150661355</created>
@@ -113,7 +164,63 @@
       <option name="project" value="LOCAL" />
       <updated>1712150661355</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Добавил зависимость jakarta.validation для валидации Dto">
+      <option name="closed" value="true" />
+      <created>1712167021146</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712167021146</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Добавил параметры пользователя для базы данных">
+      <option name="closed" value="true" />
+      <created>1712167065762</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712167065762</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Добавил обработку исключений">
+      <option name="closed" value="true" />
+      <created>1712167086203</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712167086203</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Добавил сущность и Dto">
+      <option name="closed" value="true" />
+      <created>1712167111554</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712167111554</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Добавил основные классы модуля авторизации">
+      <option name="closed" value="true" />
+      <created>1712167148685</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712167148685</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Добавил тесты постмана">
+      <option name="closed" value="true" />
+      <created>1712167165710</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712167165710</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Исправил название пакета на service">
+      <option name="closed" value="true" />
+      <created>1712167824444</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712167824444</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +239,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="Добавил зависимость jakarta.validation для валидации Dto" />
+    <MESSAGE value="Добавил параметры пользователя для базы данных" />
+    <MESSAGE value="Добавил обработку исключений" />
+    <MESSAGE value="Добавил сущность и Dto" />
+    <MESSAGE value="Добавил основные классы модуля авторизации" />
+    <MESSAGE value="Добавил тесты постмана" />
+    <MESSAGE value="Исправил название пакета на service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправил название пакета на service" />
   </component>
 </project>
