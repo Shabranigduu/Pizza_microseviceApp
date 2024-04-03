@@ -1,4 +1,4 @@
-package com.example.authorization.sercice;
+package com.example.authorization.service;
 
 import com.example.authorization.model.dto.RequestUserDto;
 import com.example.authorization.model.dto.ResponseUserDto;

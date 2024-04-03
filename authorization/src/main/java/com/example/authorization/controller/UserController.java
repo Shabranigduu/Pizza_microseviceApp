@@ -2,7 +2,7 @@ package com.example.authorization.controller;
 
 import com.example.authorization.model.dto.RequestUserDto;
 import com.example.authorization.model.dto.ResponseUserDto;
-import com.example.authorization.sercice.UserService;
+import com.example.authorization.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

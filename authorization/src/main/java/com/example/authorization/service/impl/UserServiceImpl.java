@@ -1,4 +1,4 @@
-package com.example.authorization.sercice.impl;
+package com.example.authorization.service.impl;
 
 import com.example.authorization.exception.NotFoundException;
 import com.example.authorization.model.User;
@@ -6,7 +6,7 @@ import com.example.authorization.model.dto.RequestUserDto;
 import com.example.authorization.model.dto.ResponseUserDto;
 import com.example.authorization.model.mapper.UserMapper;
 import com.example.authorization.repository.UserRepository;
-import com.example.authorization.sercice.UserService;
+import com.example.authorization.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
