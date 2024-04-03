@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authorization/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/authorization/src/main/java/com/example/authorization/AuthorizationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feedback/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_management/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authorization/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feedback/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/feedback/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logistic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/logistic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +40,62 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17"
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/MyProjects/Pizza_microseviceApp/order_management/src/main/resources",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3091954"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MyProjects\Pizza_microseviceApp\order_management\src\main\resources" />
+      <recent name="C:\MyProjects\Pizza_microseviceApp\logistic\src\main\resources" />
+      <recent name="C:\MyProjects\Pizza_microseviceApp\kitchen\src\main\resources" />
+      <recent name="C:\MyProjects\Pizza_microseviceApp\feedback\src\main\resources" />
+      <recent name="C:\MyProjects\Pizza_microseviceApp\authorization\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.FeedbackApplication">
+    <configuration name="AuthorizationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="authorization" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.authorization.AuthorizationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FeedbackApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="feedback" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.feedback.FeedbackApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KitchenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="kitchen" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.kitchen.KitchenApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogisticApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="logistic" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.logistic.LogisticApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="order_management" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.order_management.OrderManagementApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -45,8 +104,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712149949920</updated>
-      <workItem from="1712149951342" duration="341000" />
+      <workItem from="1712149951342" duration="1944000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1712150661355</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712150661355</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -62,5 +129,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
 </project>
