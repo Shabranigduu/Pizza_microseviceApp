@@ -4,8 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="Исправил название пакета на service">
+    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="add properties and init app files">
+      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/dto/OrderForKitchenDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/dto/OrderForLogisticDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/dto/OrderRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/dto/OrderResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/exception/ApiError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/exception/ErrorHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/exception/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/mapper/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_management/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +36,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/authorization" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -28,17 +47,38 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/authorization/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/authorization/src/main/java/com/example/authorization/AuthorizationApplication.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/feedback/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/feedback/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/kitchen/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/kitchen/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/logistic/pom.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/logistic/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/order_management/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/order_management/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2eakCTTW8Nt72Zv3dI2iPLolAZL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -56,7 +96,7 @@
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Denis/java-explore-with-me",
+    "last_opened_file_path": "C:/MyProjects/Pizza_microseviceApp/order_management/src/main/java/com/example/order_management",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,6 +106,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3091954",
     "run.configurations.included.in.services": "true",
+    "spring.configuration.checksum": "9ba08ce46d7cb4e2d912f975387bf991",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -76,11 +117,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MyProjects\Pizza_microseviceApp\order_management\src\main\java\com\example\order_management" />
       <recent name="C:\MyProjects\Pizza_microseviceApp\order_management\src\main\resources" />
       <recent name="C:\MyProjects\Pizza_microseviceApp\logistic\src\main\resources" />
       <recent name="C:\MyProjects\Pizza_microseviceApp\kitchen\src\main\resources" />
       <recent name="C:\MyProjects\Pizza_microseviceApp\feedback\src\main\resources" />
-      <recent name="C:\MyProjects\Pizza_microseviceApp\authorization\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Denis\Pizza_microseviceApp\postman" />
@@ -156,6 +197,9 @@
       <updated>1712149949920</updated>
       <workItem from="1712149951342" duration="1944000" />
       <workItem from="1712156852553" duration="10371000" />
+      <workItem from="1712437393887" duration="8312000" />
+      <workItem from="1712508220032" duration="1728000" />
+      <workItem from="1712610884479" duration="4610000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1712150661355</created>
