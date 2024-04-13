@@ -4,8 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="Исправил название пакета на service">
+    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="Исправил имя переменной">
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/controller/CourierController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/controller/DeliveryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/exception/ApiError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/exception/ErrorHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/exception/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/model/Courier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/model/Delivery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/model/dto/RequestCourierDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/model/dto/RequestDeliveryDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/model/dto/ResponseCourierDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/model/dto/ResponseDeliveryDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/model/mapper/CourierMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/model/mapper/DeliveryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/repository/CourierRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/repository/DeliveryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/service/CourierService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/service/DeliveryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/service/impl/CourierServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/service/impl/DeliveryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logistic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/logistic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logistic/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/logistic/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,20 +46,20 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="authorization" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2eakCTTW8Nt72Zv3dI2iPLolAZL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -53,10 +76,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.AuthorizationApplication.executor": "Run",
+    "Spring Boot.LogisticApplication.executor": "Debug",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Denis/java-explore-with-me",
+    "last_opened_file_path": "C:/Users/Denis/Pizza_microseviceApp/logistic/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,6 +90,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3091954",
     "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -75,18 +100,25 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.logistic.repository" />
+      <recent name="com.example.logistic.service" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Denis\Pizza_microseviceApp\logistic\src\main\resources" />
+      <recent name="C:\Users\Denis\Pizza_microseviceApp\logistic\src\main\java\com\example\logistic\service" />
+      <recent name="C:\Users\Denis\Pizza_microseviceApp\logistic\src\main\java\com\example\logistic\exception" />
       <recent name="C:\MyProjects\Pizza_microseviceApp\order_management\src\main\resources" />
       <recent name="C:\MyProjects\Pizza_microseviceApp\logistic\src\main\resources" />
-      <recent name="C:\MyProjects\Pizza_microseviceApp\kitchen\src\main\resources" />
-      <recent name="C:\MyProjects\Pizza_microseviceApp\feedback\src\main\resources" />
-      <recent name="C:\MyProjects\Pizza_microseviceApp\authorization\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Denis\Pizza_microseviceApp\postman" />
       <recent name="C:\Users\Denis\Pizza_microseviceApp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.logistic.service" />
+      <recent name="com.example.logistic.repository" />
+      <recent name="com.example.logistic.controller" />
       <recent name="com.example.authorization.exception" />
       <recent name="" />
     </key>
@@ -100,7 +132,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthorizationApplication">
+  <component name="RunManager" selected="Spring Boot.LogisticApplication">
+    <configuration name="AuthorizationApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.authorization.AuthorizationApplication" />
+      <module name="authorization" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.authorization.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AuthorizationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="authorization" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.authorization.AuthorizationApplication" />
@@ -136,13 +181,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AuthorizationApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-11.0.21-corretto-11.0.21-3183f394aec4-d55de845" />
-        <option value="jdk-17.0.10-corretto-17.0.10-f644763e9732-24fca987" />
-        <option value="jdk-17.0.9-corretto-17.0.9-3183f394aec4-8f899f12" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -155,7 +204,12 @@
       <option name="presentableId" value="Default" />
       <updated>1712149949920</updated>
       <workItem from="1712149951342" duration="1944000" />
-      <workItem from="1712156852553" duration="10371000" />
+      <workItem from="1712156852553" duration="12952000" />
+      <workItem from="1712333840037" duration="871000" />
+      <workItem from="1712337414245" duration="114000" />
+      <workItem from="1712678377308" duration="13164000" />
+      <workItem from="1712757519290" duration="13120000" />
+      <workItem from="1713013134702" duration="8928000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1712150661355</created>
@@ -220,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712167824444</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Исправил имя переменной">
+      <option name="closed" value="true" />
+      <created>1712168583149</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712168583149</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +308,7 @@
     <MESSAGE value="Добавил основные классы модуля авторизации" />
     <MESSAGE value="Добавил тесты постмана" />
     <MESSAGE value="Исправил название пакета на service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправил название пакета на service" />
+    <MESSAGE value="Исправил имя переменной" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправил имя переменной" />
   </component>
 </project>
