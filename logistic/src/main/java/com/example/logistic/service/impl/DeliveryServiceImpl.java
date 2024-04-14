@@ -1,5 +1,6 @@
 package com.example.logistic.service.impl;
 
+import com.example.logistic.client.Client;
 import com.example.logistic.model.Delivery;
 import com.example.logistic.model.dto.ResponseCourierDto;
 import com.example.logistic.model.dto.ResponseDeliveryDto;
@@ -20,11 +21,21 @@ import java.util.Random;
 public class DeliveryServiceImpl implements DeliveryService {
     private final DeliveryRepository deliveryRepository;
     private final CourierService courierService;
+    private final Client client;
 
+    private final String DELIVERED_STATE = "DELIVERED";
+    private final String COMPLETED_STATE = "COMPLETED";
 
     @Override
     public ResponseDeliveryDto postDelivery(Integer orderId) {
         Delivery delivery = new Delivery(orderId, chooseCourier());
+
+        try {
+            client.sendStatusOrder(DELIVERED_STATE);
+        } catch (Throwable e) {
+            throw new RuntimeException(e);
+        }
+
         return DeliveryMapper.toResponseDto(deliveryRepository.save(delivery));
     }
 
@@ -33,7 +44,12 @@ public class DeliveryServiceImpl implements DeliveryService {
     public ResponseDeliveryDto patchDelivery(Integer orderId) {
         deliveryRepository.updateDeliveryStateByOrderId(orderId);
         Delivery delivery = deliveryRepository.getDeliveryByOrderId(orderId);
-        //todo отправить смену статуса заказа с помощью константы и параметра урла
+
+        try {
+            client.sendStatusOrder(COMPLETED_STATE);
+        } catch (Throwable e) {
+            throw new RuntimeException(e);
+        }
 
         return DeliveryMapper.toResponseDto(delivery);
     }

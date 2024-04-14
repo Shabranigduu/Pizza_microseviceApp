@@ -18,12 +18,12 @@ public class ErrorHandler {
                 LocalDateTime.now());
     }
 
-//    @ExceptionHandler
-//    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-//    public ApiError throwableException(final Throwable e) {
-//        return new ApiError(HttpStatus.INTERNAL_SERVER_ERROR.toString(),
-//                "internal server error",
-//                e.getMessage(),
-//                LocalDateTime.now());
-//    }
+    @ExceptionHandler
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+    public ApiError throwableException(final Throwable e) {
+        return new ApiError(HttpStatus.INTERNAL_SERVER_ERROR.toString(),
+                "internal server error",
+                e.getMessage(),
+                LocalDateTime.now());
+    }
 }

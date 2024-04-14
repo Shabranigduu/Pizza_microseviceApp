@@ -4,31 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="Исправил имя переменной">
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/controller/CourierController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/controller/DeliveryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/exception/ApiError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/exception/ErrorHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/exception/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/model/Courier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/model/Delivery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/model/dto/RequestCourierDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/model/dto/RequestDeliveryDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/model/dto/ResponseCourierDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/model/dto/ResponseDeliveryDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/model/mapper/CourierMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/model/mapper/DeliveryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/repository/CourierRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/repository/DeliveryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/service/CourierService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/service/DeliveryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/service/impl/CourierServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/service/impl/DeliveryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="Основной функционал модуля">
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/client/BaseClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/client/StatsClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logistic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/logistic/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logistic/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/logistic/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/service/impl/DeliveryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/service/impl/DeliveryServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,11 +56,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.AuthorizationApplication.executor": "Run",
-    "Spring Boot.LogisticApplication.executor": "Debug",
+    "Spring Boot.LogisticApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Denis/Pizza_microseviceApp/logistic/src/main/resources",
+    "last_opened_file_path": "C:/Users/Denis/Pizza_microseviceApp/logistic/src/main/java/com/example/logistic/client",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -105,11 +85,11 @@
       <recent name="com.example.logistic.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Denis\Pizza_microseviceApp\logistic\src\main\java\com\example\logistic\client" />
       <recent name="C:\Users\Denis\Pizza_microseviceApp\logistic\src\main\resources" />
       <recent name="C:\Users\Denis\Pizza_microseviceApp\logistic\src\main\java\com\example\logistic\service" />
       <recent name="C:\Users\Denis\Pizza_microseviceApp\logistic\src\main\java\com\example\logistic\exception" />
       <recent name="C:\MyProjects\Pizza_microseviceApp\order_management\src\main\resources" />
-      <recent name="C:\MyProjects\Pizza_microseviceApp\logistic\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Denis\Pizza_microseviceApp\postman" />
@@ -132,7 +112,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LogisticApplication">
+  <component name="RunManager" selected="Spring Boot.AuthorizationApplication">
     <configuration name="AuthorizationApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.authorization.AuthorizationApplication" />
       <module name="authorization" />
@@ -209,7 +189,8 @@
       <workItem from="1712337414245" duration="114000" />
       <workItem from="1712678377308" duration="13164000" />
       <workItem from="1712757519290" duration="13120000" />
-      <workItem from="1713013134702" duration="8928000" />
+      <workItem from="1713013134702" duration="9822000" />
+      <workItem from="1713108534689" duration="5141000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1712150661355</created>
@@ -282,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712168583149</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Основной функционал модуля">
+      <option name="closed" value="true" />
+      <created>1713026714452</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713026714452</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,6 +298,7 @@
     <MESSAGE value="Добавил тесты постмана" />
     <MESSAGE value="Исправил название пакета на service" />
     <MESSAGE value="Исправил имя переменной" />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправил имя переменной" />
+    <MESSAGE value="Основной функционал модуля" />
+    <option name="LAST_COMMIT_MESSAGE" value="Основной функционал модуля" />
   </component>
 </project>
