@@ -4,11 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="Основной функционал модуля">
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/client/BaseClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/client/StatsClient.java" afterDir="false" />
+    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="- Добавил основные запросы контроллера и бизнесс-логику&#10;- Добавил запрос пользователя из слоя авторизации&#10;- Добавил маппер&#10;- Добавил перехватчик исключений">
+      <change afterPath="$PROJECT_DIR$/authorization/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization/create_db.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_management/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_management/src/main/resources/application-local.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_management/src/test/java/com/example/order_management/service/OrderServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/service/impl/DeliveryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/logistic/src/main/java/com/example/logistic/service/impl/DeliveryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authorization/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/authorization/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/OrderManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/OrderManagementApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/dto/OrderRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/dto/OrderRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/repository/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_management/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,16 +35,39 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/authorization" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="authorization" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/authorization/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/authorization/src/main/java/com/example/authorization/AuthorizationApplication.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/feedback/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/feedback/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/kitchen/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/kitchen/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/logistic/pom.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/logistic/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/order_management/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/order_management/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -41,7 +79,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2eakCTTW8Nt72Zv3dI2iPLolAZL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -56,11 +96,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.AuthorizationApplication.executor": "Run",
-    "Spring Boot.LogisticApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Denis/Pizza_microseviceApp/logistic/src/main/java/com/example/logistic/client",
+    "last_opened_file_path": "C:/MyProjects/A-money/authentication-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,7 +111,8 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3091954",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "spring.configuration.checksum": "9ba08ce46d7cb4e2d912f975387bf991",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -80,28 +122,32 @@
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.example.logistic.repository" />
-      <recent name="com.example.logistic.service" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Denis\Pizza_microseviceApp\logistic\src\main\java\com\example\logistic\client" />
-      <recent name="C:\Users\Denis\Pizza_microseviceApp\logistic\src\main\resources" />
-      <recent name="C:\Users\Denis\Pizza_microseviceApp\logistic\src\main\java\com\example\logistic\service" />
-      <recent name="C:\Users\Denis\Pizza_microseviceApp\logistic\src\main\java\com\example\logistic\exception" />
+      <recent name="C:\MyProjects\Pizza_microseviceApp\order_management\src\main\java\com\example\order_management" />
       <recent name="C:\MyProjects\Pizza_microseviceApp\order_management\src\main\resources" />
+      <recent name="C:\MyProjects\Pizza_microseviceApp\logistic\src\main\resources" />
+      <recent name="C:\MyProjects\Pizza_microseviceApp\kitchen\src\main\resources" />
+      <recent name="C:\MyProjects\Pizza_microseviceApp\feedback\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Denis\Pizza_microseviceApp\postman" />
       <recent name="C:\Users\Denis\Pizza_microseviceApp" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.order_management.service" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.logistic.service" />
-      <recent name="com.example.logistic.repository" />
-      <recent name="com.example.logistic.controller" />
       <recent name="com.example.authorization.exception" />
       <recent name="" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="$ mvn package spring-boot:repackage" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -112,16 +158,19 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthorizationApplication">
-    <configuration name="AuthorizationApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.authorization.AuthorizationApplication" />
-      <module name="authorization" />
+  <component name="RunManager" selected="Spring Boot.OrderManagementApplication">
+    <configuration name="OrderServiceTest.getExistUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="order_management" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.authorization.*" />
+          <option name="PATTERN" value="com.example.order_management.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.example.order_management.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.order_management.service.OrderServiceTest" />
+      <option name="METHOD_NAME" value="getExistUser" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -155,23 +204,43 @@
       </method>
     </configuration>
     <configuration name="OrderManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" value="local" />
       <module name="order_management" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.order_management.OrderManagementApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="JUnit.OrderServiceTest.getExistUser" />
+      <item itemvalue="Spring Boot.AuthorizationApplication" />
+      <item itemvalue="Spring Boot.FeedbackApplication" />
+      <item itemvalue="Spring Boot.KitchenApplication" />
+      <item itemvalue="Spring Boot.LogisticApplication" />
+      <item itemvalue="Spring Boot.OrderManagementApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AuthorizationApplication" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="JUnit.OrderServiceTest.getExistUser" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+        <option value="jdk-11.0.21-corretto-11.0.21-3183f394aec4-d55de845" />
+        <option value="jdk-17.0.10-corretto-17.0.10-f644763e9732-24fca987" />
+        <option value="jdk-17.0.9-corretto-17.0.9-3183f394aec4-8f899f12" />
       </set>
     </attachedChunks>
   </component>
@@ -184,13 +253,20 @@
       <option name="presentableId" value="Default" />
       <updated>1712149949920</updated>
       <workItem from="1712149951342" duration="1944000" />
-      <workItem from="1712156852553" duration="12952000" />
-      <workItem from="1712333840037" duration="871000" />
-      <workItem from="1712337414245" duration="114000" />
-      <workItem from="1712678377308" duration="13164000" />
-      <workItem from="1712757519290" duration="13120000" />
-      <workItem from="1713013134702" duration="9822000" />
-      <workItem from="1713108534689" duration="5141000" />
+      <workItem from="1712156852553" duration="10371000" />
+      <workItem from="1712437393887" duration="8312000" />
+      <workItem from="1712508220032" duration="1728000" />
+      <workItem from="1712610884479" duration="5467000" />
+      <workItem from="1712818234468" duration="1366000" />
+      <workItem from="1712928042657" duration="11000" />
+      <workItem from="1712928348583" duration="1224000" />
+      <workItem from="1713112571332" duration="2972000" />
+      <workItem from="1713182913868" duration="1273000" />
+      <workItem from="1713188241768" duration="22000" />
+      <workItem from="1713432667556" duration="2923000" />
+      <workItem from="1713437302239" duration="2515000" />
+      <workItem from="1713612186008" duration="13635000" />
+      <workItem from="1713692430200" duration="7847000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1712150661355</created>
@@ -255,23 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712167824444</updated>
     </task>
-    <task id="LOCAL-00009" summary="Исправил имя переменной">
-      <option name="closed" value="true" />
-      <created>1712168583149</created>
+    <task id="LOCAL-00009" summary="- Добавил основные запросы контроллера и бизнесс-логику&#10;- Добавил запрос пользователя из слоя авторизации&#10;- Добавил маппер&#10;- Добавил перехватчик исключений">
+      <created>1712616209912</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1712168583149</updated>
+      <updated>1712616209912</updated>
     </task>
-    <task id="LOCAL-00010" summary="Основной функционал модуля">
-      <option name="closed" value="true" />
-      <created>1713026714452</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1713026714452</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,8 +364,7 @@
     <MESSAGE value="Добавил основные классы модуля авторизации" />
     <MESSAGE value="Добавил тесты постмана" />
     <MESSAGE value="Исправил название пакета на service" />
-    <MESSAGE value="Исправил имя переменной" />
-    <MESSAGE value="Основной функционал модуля" />
-    <option name="LAST_COMMIT_MESSAGE" value="Основной функционал модуля" />
+    <MESSAGE value="- Добавил основные запросы контроллера и бизнесс-логику&#10;- Добавил запрос пользователя из слоя авторизации&#10;- Добавил маппер&#10;- Добавил перехватчик исключений" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Добавил основные запросы контроллера и бизнесс-логику&#10;- Добавил запрос пользователя из слоя авторизации&#10;- Добавил маппер&#10;- Добавил перехватчик исключений" />
   </component>
 </project>
