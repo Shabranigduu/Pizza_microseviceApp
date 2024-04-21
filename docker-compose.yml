@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+
+  authorization:
+    build: authorization
+    image: pizza-authorization-service
+    container_name: auth-server
+    ports:
+      - "8080:8080"
+    depends_on:
+      - auth-db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://auth-db:5432/authorization
+      - SPRING_DATASOURCE_USERNAME=user
+      - SPRING_DATASOURCE_PASSWORD=user
+
+  auth-db:
+    image: postgres:16-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=user
+      - POSTGRES_USER=user
+      - POSTGRES_DB=authorization
+
+  order-management:
+    build: order_management
+    image: pizza-order-management-service
+    ports:
+      - "8081:8081"
+    depends_on:
+      - order_db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://order_db:5432/order_management
+      - SPRING_DATASOURCE_USERNAME=order
+      - SPRING_DATASOURCE_PASSWORD=order
+
+  order_db:
+    image: postgres:16-alpine
+    ports:
+      - "6081:5432"
+    environment:
+      - POSTGRES_PASSWORD=order
+      - POSTGRES_USER=order
+      - POSTGRES_DB=order_management
+
+
+
+

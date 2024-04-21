@@ -4,23 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="add properties and init app files">
-      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/dto/OrderForKitchenDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/dto/OrderForLogisticDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/dto/OrderRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/dto/OrderResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/entity/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/exception/ApiError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/exception/ErrorHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/exception/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/repository/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/service/OrderService.java" afterDir="false" />
+    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="- Добавил основные запросы контроллера и бизнесс-логику&#10;- Добавил запрос пользователя из слоя авторизации&#10;- Добавил маппер&#10;- Добавил перехватчик исключений">
+      <change afterPath="$PROJECT_DIR$/authorization/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization/create_db.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_management/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_management/src/main/resources/application-local.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_management/src/test/java/com/example/order_management/service/OrderServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authorization/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/authorization/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order_management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/OrderManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/OrderManagementApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/dto/OrderRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/dto/OrderRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/repository/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order_management/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +35,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -94,9 +97,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.AuthorizationApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/MyProjects/Pizza_microseviceApp/order_management/src/main/java/com/example/order_management",
+    "last_opened_file_path": "C:/MyProjects/A-money/authentication-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -106,6 +111,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3091954",
     "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
     "spring.configuration.checksum": "9ba08ce46d7cb4e2d912f975387bf991",
     "vue.rearranger.settings.migration": "true"
   },
@@ -127,10 +133,21 @@
       <recent name="C:\Users\Denis\Pizza_microseviceApp\postman" />
       <recent name="C:\Users\Denis\Pizza_microseviceApp" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.order_management.service" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.authorization.exception" />
       <recent name="" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="$ mvn package spring-boot:repackage" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -141,7 +158,23 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthorizationApplication">
+  <component name="RunManager" selected="Spring Boot.OrderManagementApplication">
+    <configuration name="OrderServiceTest.getExistUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="order_management" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.order_management.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.order_management.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.order_management.service.OrderServiceTest" />
+      <option name="METHOD_NAME" value="getExistUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AuthorizationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="authorization" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.authorization.AuthorizationApplication" />
@@ -171,12 +204,36 @@
       </method>
     </configuration>
     <configuration name="OrderManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" value="local" />
       <module name="order_management" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.order_management.OrderManagementApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="JUnit.OrderServiceTest.getExistUser" />
+      <item itemvalue="Spring Boot.AuthorizationApplication" />
+      <item itemvalue="Spring Boot.FeedbackApplication" />
+      <item itemvalue="Spring Boot.KitchenApplication" />
+      <item itemvalue="Spring Boot.LogisticApplication" />
+      <item itemvalue="Spring Boot.OrderManagementApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="JUnit.OrderServiceTest.getExistUser" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -199,7 +256,17 @@
       <workItem from="1712156852553" duration="10371000" />
       <workItem from="1712437393887" duration="8312000" />
       <workItem from="1712508220032" duration="1728000" />
-      <workItem from="1712610884479" duration="4610000" />
+      <workItem from="1712610884479" duration="5467000" />
+      <workItem from="1712818234468" duration="1366000" />
+      <workItem from="1712928042657" duration="11000" />
+      <workItem from="1712928348583" duration="1224000" />
+      <workItem from="1713112571332" duration="2972000" />
+      <workItem from="1713182913868" duration="1273000" />
+      <workItem from="1713188241768" duration="22000" />
+      <workItem from="1713432667556" duration="2923000" />
+      <workItem from="1713437302239" duration="2515000" />
+      <workItem from="1713612186008" duration="13635000" />
+      <workItem from="1713692430200" duration="7847000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1712150661355</created>
@@ -264,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712167824444</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="- Добавил основные запросы контроллера и бизнесс-логику&#10;- Добавил запрос пользователя из слоя авторизации&#10;- Добавил маппер&#10;- Добавил перехватчик исключений">
+      <created>1712616209912</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712616209912</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,6 +364,7 @@
     <MESSAGE value="Добавил основные классы модуля авторизации" />
     <MESSAGE value="Добавил тесты постмана" />
     <MESSAGE value="Исправил название пакета на service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправил название пакета на service" />
+    <MESSAGE value="- Добавил основные запросы контроллера и бизнесс-логику&#10;- Добавил запрос пользователя из слоя авторизации&#10;- Добавил маппер&#10;- Добавил перехватчик исключений" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Добавил основные запросы контроллера и бизнесс-логику&#10;- Добавил запрос пользователя из слоя авторизации&#10;- Добавил маппер&#10;- Добавил перехватчик исключений" />
   </component>
 </project>

@@ -3,17 +3,20 @@ package com.example.order_management.controller;
 import com.example.order_management.dto.OrderRequestDTO;
 import com.example.order_management.dto.OrderResponseDTO;
 import com.example.order_management.service.OrderService;
-import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
 @RestController
-@RequiredArgsConstructor
 @RequestMapping("/order")
 public class OrderController {
 
+
     private final OrderService orderService;
+
+    public OrderController(OrderService orderService) {
+        this.orderService = orderService;
+    }
 
     @GetMapping("/{orderId}")
     public OrderResponseDTO getOrder(@PathVariable Integer orderId) {

@@ -38,8 +38,8 @@ public class OrderService {
     }
 
     public UserDTO getUser(Integer id){
-            ResponseEntity<UserDTO> response = restTemplate.getForEntity("http://localhost:8082/user/"+id, UserDTO.class);
-       if(response.getStatusCode().is4xxClientError()){
+            ResponseEntity<UserDTO> response = restTemplate.getForEntity("http://authorization:8080/user/"+id, UserDTO.class);
+        if(response.getStatusCode().is4xxClientError()){
            throw new NotFoundException("Пользователь с id="+id+" не зарегистрирован");
        } else if (response.getStatusCode().is2xxSuccessful()) {
            return response.getBody();
@@ -53,7 +53,6 @@ public class OrderService {
         }
         return OrderMapper.orderToOrderResponseDTO(optionalOrder.get());
     }
-
 
     public OrderResponseDTO addOrder(OrderRequestDTO orderRequestDTO) {
         getUser(orderRequestDTO.getUserId());
@@ -86,5 +85,7 @@ public class OrderService {
             throw new NotFoundException("Заказ с id="+id+" не найден.");
         }
         return optionalOrder.get();
+
+
     }
 }

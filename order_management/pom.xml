@@ -67,6 +67,8 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>3.2.4</version>
                 <configuration>
+                    <mainClass>com.example.order_management.OrderManagementApplication</mainClass>
+                    <layout>JAR</layout>
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>
@@ -74,22 +76,13 @@
                         </exclude>
                     </excludes>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version>
-                <configuration>
-                    <source>16</source>
-                    <target>16</target>
-                    <annotationProcessorPaths>
-                        <path>
-                            <groupId>org.mapstruct</groupId>
-                            <artifactId>mapstruct-processor</artifactId>
-                            <version>${org.mapstruct.version}</version>
-                        </path>
-                    </annotationProcessorPaths>
-                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

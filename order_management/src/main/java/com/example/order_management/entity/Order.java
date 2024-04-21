@@ -2,7 +2,6 @@ package com.example.order_management.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.hibernate.annotations.ColumnDefault;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.lang.NonNull;
 
@@ -10,12 +9,15 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 
+@ToString
+@EqualsAndHashCode
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @Entity
+@Table(name = "pizza-order")
 public class Order {
 
     @Id
