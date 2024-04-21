@@ -10,10 +10,10 @@ services:
       - "8080:8080"
     depends_on:
       - auth-db
-    environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://auth-db:5432/authorization
-      - SPRING_DATASOURCE_USERNAME=user
-      - SPRING_DATASOURCE_PASSWORD=user
+#    environment:
+#      - SPRING_DATASOURCE_URL=jdbc:postgresql://auth-db:5432/authorization
+#      - SPRING_DATASOURCE_USERNAME=user
+#      - SPRING_DATASOURCE_PASSWORD=user
 
   auth-db:
     image: postgres:16-alpine
@@ -45,6 +45,25 @@ services:
       - POSTGRES_USER=order
       - POSTGRES_DB=order_management
 
+  logistic:
+    build: logistic
+    image: pizza-logistic
+    ports:
+      - "8083:8083"
+    depends_on:
+      - logistic_db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://logistic_db:5432/logistic
+      - SPRING_DATASOURCE_USERNAME=user
+      - SPRING_DATASOURCE_PASSWORD=user
 
+  logistic_db:
+    image: postgres:16-alpine
+    ports:
+      - "6083:5432"
+    environment:
+      - POSTGRES_PASSWORD=user
+      - POSTGRES_USER=user
+      - POSTGRES_DB=logistic
 
 

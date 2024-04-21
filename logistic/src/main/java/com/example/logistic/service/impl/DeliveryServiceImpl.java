@@ -23,19 +23,13 @@ public class DeliveryServiceImpl implements DeliveryService {
     private final CourierService courierService;
     private final Client client;
 
-    private final String DELIVERED_STATE = "DELIVERED";
-    private final String COMPLETED_STATE = "COMPLETED";
+    private final String DELIVERED_STATE = "доставляется";
+    private final String COMPLETED_STATE = "выполнен";
 
     @Override
     public ResponseDeliveryDto postDelivery(Integer orderId) {
         Delivery delivery = new Delivery(orderId, chooseCourier());
-
-        try {
-            client.sendStatusOrder(DELIVERED_STATE);
-        } catch (Throwable e) {
-            throw new RuntimeException(e);
-        }
-
+        client.sendStatusOrder(orderId, DELIVERED_STATE);
         return DeliveryMapper.toResponseDto(deliveryRepository.save(delivery));
     }
 
@@ -44,13 +38,7 @@ public class DeliveryServiceImpl implements DeliveryService {
     public ResponseDeliveryDto patchDelivery(Integer orderId) {
         deliveryRepository.updateDeliveryStateByOrderId(orderId);
         Delivery delivery = deliveryRepository.getDeliveryByOrderId(orderId);
-
-        try {
-            client.sendStatusOrder(COMPLETED_STATE);
-        } catch (Throwable e) {
-            throw new RuntimeException(e);
-        }
-
+        client.sendStatusOrder(orderId, COMPLETED_STATE);
         return DeliveryMapper.toResponseDto(delivery);
     }
 
