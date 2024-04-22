@@ -41,4 +41,14 @@ public class OrderMapper {
                 .build();
     }
 
+    public static Order orderResponseDTOToEntity(OrderResponseDTO orderResponseDTO){
+        return Order.builder()
+                .id(orderResponseDTO.getId())
+                .userId(orderResponseDTO.getUserId())
+                .orderState(Order.OrderState.fromString(orderResponseDTO.getOrderState()))
+                .orderDate(orderResponseDTO.getOrderDate())
+                .pizzaList(orderResponseDTO.getPizzaList())
+                .build();
+    }
+
 }

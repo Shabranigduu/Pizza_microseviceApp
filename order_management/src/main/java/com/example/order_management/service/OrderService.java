@@ -28,28 +28,19 @@ public class OrderService {
 
     private final RestTemplate restTemplate;
 
-    public List<String> getPizzaList(Order order) {
-        List<String> pizzaIdList = order.getPizzaList().stream()
-                .map(Object::toString)
-                .toList();
-        String[] pizzaArray = restTemplate.getForObject("http://localhost:8082/pizza/" + String.join(",", pizzaIdList), String[].class);
-        if(pizzaArray == null) return Collections.emptyList();
-        return Arrays.asList(pizzaArray);
-    }
-
-    public UserDTO getUser(Integer id){
-            ResponseEntity<UserDTO> response = restTemplate.getForEntity("http://authorization:8080/user/"+id, UserDTO.class);
-        if(response.getStatusCode().is4xxClientError()){
-           throw new NotFoundException("Пользователь с id="+id+" не зарегистрирован");
-       } else if (response.getStatusCode().is2xxSuccessful()) {
-           return response.getBody();
-       }else throw new HttpServerErrorException(response.getStatusCode());
+    public UserDTO getUser(Integer id) {
+        ResponseEntity<UserDTO> response = restTemplate.getForEntity("http://authorization:8080/user/" + id, UserDTO.class);
+        if (response.getStatusCode().is4xxClientError()) {
+            throw new NotFoundException("Пользователь с id=" + id + " не зарегистрирован");
+        } else if (response.getStatusCode().is2xxSuccessful()) {
+            return response.getBody();
+        } else throw new HttpServerErrorException(response.getStatusCode());
     }
 
     public OrderResponseDTO getOrder(Integer orderId) {
         Optional<Order> optionalOrder = orderRepository.findById(orderId);
-        if(optionalOrder.isEmpty()){
-            throw new EntityNotFoundException("Заказ с id="+orderId+" не найден");
+        if (optionalOrder.isEmpty()) {
+            throw new EntityNotFoundException("Заказ с id=" + orderId + " не найден");
         }
         return OrderMapper.orderToOrderResponseDTO(optionalOrder.get());
     }
@@ -76,13 +67,13 @@ public class OrderService {
     public OrderResponseDTO setOrderState(Integer orderId, String state) {
         Order order = getOrderById(orderId);
         order.setOrderState(Order.OrderState.fromString(state));
-       return OrderMapper.orderToOrderResponseDTO(orderRepository.save(order));
+        return OrderMapper.orderToOrderResponseDTO(orderRepository.save(order));
     }
 
-    private Order getOrderById(Integer id){
+    private Order getOrderById(Integer id) {
         Optional<Order> optionalOrder = orderRepository.findById(id);
-        if(optionalOrder.isEmpty()){
-            throw new NotFoundException("Заказ с id="+id+" не найден.");
+        if (optionalOrder.isEmpty()) {
+            throw new NotFoundException("Заказ с id=" + id + " не найден.");
         }
         return optionalOrder.get();
 
