@@ -10,10 +10,10 @@ services:
       - "8080:8080"
     depends_on:
       - auth-db
-#    environment:
-#      - SPRING_DATASOURCE_URL=jdbc:postgresql://auth-db:5432/authorization
-#      - SPRING_DATASOURCE_USERNAME=user
-#      - SPRING_DATASOURCE_PASSWORD=user
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://auth-db:5432/authorization
+      - SPRING_DATASOURCE_USERNAME=user
+      - SPRING_DATASOURCE_PASSWORD=user
 
   auth-db:
     image: postgres:16-alpine
@@ -66,4 +66,44 @@ services:
       - POSTGRES_USER=user
       - POSTGRES_DB=logistic
 
+  feedback:
+    build: feedback
+    image: pizza-feedback
+    ports:
+      - "8084:8084"
+    depends_on:
+      - feedback_db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://feedback_db:5432/feedback
+      - SPRING_DATASOURCE_USERNAME=feedback
+      - SPRING_DATASOURCE_PASSWORD=feedback
 
+  feedback_db:
+    image: postgres:16-alpine
+    ports:
+      - "6084:5432"
+    environment:
+      - POSTGRES_PASSWORD=feedback
+      - POSTGRES_USER=feedback
+      - POSTGRES_DB=feedback
+
+  kitchen:
+    build: kitchen
+    image: pizza-kitchen
+    ports:
+      - "8082:8082"
+    depends_on:
+      - kitchen_db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://kitchen_db:5432/kitchen
+      - SPRING_DATASOURCE_USERNAME=kitchen
+      - SPRING_DATASOURCE_PASSWORD=kitchen
+
+  kitchen_db:
+    image: postgres:16-alpine
+    ports:
+      - "6082:5432"
+    environment:
+      - POSTGRES_PASSWORD=kitchen
+      - POSTGRES_USER=kitchen
+      - POSTGRES_DB=kitchen
