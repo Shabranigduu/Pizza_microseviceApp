@@ -1,16 +1,39 @@
 package com.example.kitchen.entity;
 
+import jakarta.persistence.*;
+import lombok.*;
+import org.antlr.v4.runtime.misc.NotNull;
+
+import javax.validation.constraints.NotBlank;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Entity
 public class Pizza {
 
-    private Long id;
-    private String name;
+    @Id //аннотация обозначает поле как id в БД
+    @NotNull
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //способ генерации значений идентификатора в базе данных (IDENTITY - уникальное значение)
+    private int id; //идентификатор пиццы
+
+    @NotBlank // из библиотеки BeanValidation, гарантирует что значение будет notnull и не пустое
+    @Column(name = "name", length = 100) //аннотация, указывающая имя колонки в БД и длину
+    private String name; //наименование пиццы
+
+
+    @NotNull //аннотация указывает что поле не может быть null (lombok)
+    @Column (name = "quantity", length = 50)
+    private int quantity; //поле "количество пиццы"
+
+
+
+    /*
     private String description;
     private double price;
-    private int quantity;
 
-    public Pizza() {
-        // Пустой конструктор для работы с базой данных
-    }
 
     public Pizza(Long id, String name, String description, double price, int quantity) {
         this.id = id;
@@ -70,4 +93,6 @@ public class Pizza {
                 ", quantity=" + quantity +
                 '}';
     }
+
+     */
 }

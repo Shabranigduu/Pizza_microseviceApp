@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="Исправил название пакета на service">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/controller/PizzaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/controller/PizzaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/dto/PizzaResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/dto/PizzaResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/entity/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/entity/Pizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/mapper/PizzaMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/mapper/PizzaMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/repository/PizzaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/repository/PizzaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/service/PizzaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/service/PizzaService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -35,6 +42,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -48,6 +58,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.PizzaControllerTest.executor": "Run",
+    "JUnit.PizzaControllerTest.getMenuSuccess.executor": "Run",
+    "Maven.Pizza_microseviceApp [clean,package].executor": "Run",
+    "Maven.kitchen [clean,compile].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -57,10 +71,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.AuthorizationApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "kitchen",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Denis/java-explore-with-me",
+    "last_opened_file_path": "D:/Projects/Pizza_microseviceApp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -90,10 +106,21 @@
       <recent name="C:\Users\Denis\Pizza_microseviceApp\postman" />
       <recent name="C:\Users\Denis\Pizza_microseviceApp" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.kitchen.controller" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.authorization.exception" />
       <recent name="" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean package" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -104,7 +131,38 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthorizationApplication">
+  <component name="RunManager" selected="JUnit.PizzaControllerTest">
+    <configuration name="PizzaControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kitchen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.kitchen.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.kitchen.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.kitchen.controller.PizzaControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PizzaControllerTest.getMenuSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kitchen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.kitchen.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.kitchen.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.kitchen.controller.PizzaControllerTest" />
+      <option name="METHOD_NAME" value="getMenuSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AuthorizationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="authorization" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.authorization.AuthorizationApplication" />
@@ -140,6 +198,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PizzaControllerTest" />
+        <item itemvalue="JUnit.PizzaControllerTest.getMenuSuccess" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -159,7 +223,10 @@
       <updated>1712149949920</updated>
       <workItem from="1712149951342" duration="1944000" />
       <workItem from="1712156852553" duration="10371000" />
-      <workItem from="1713015579192" duration="6212000" />
+      <workItem from="1713015579192" duration="11520000" />
+      <workItem from="1713297792529" duration="25000" />
+      <workItem from="1713298203834" duration="47000" />
+      <workItem from="1713606932256" duration="13716000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1712150661355</created>

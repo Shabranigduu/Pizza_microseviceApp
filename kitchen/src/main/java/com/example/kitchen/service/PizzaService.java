@@ -1,55 +1,62 @@
 package com.example.kitchen.service;
+
+import com.example.kitchen.dto.OrderForKitchenDTO;
+import com.example.kitchen.dto.PizzaListDTO;
 import com.example.kitchen.dto.PizzaResponseDTO;
 import com.example.kitchen.entity.Pizza;
+import com.example.kitchen.mapper.PizzaMapper;
+import com.example.kitchen.repository.PizzaRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.net.URI;
+import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class PizzaService {
 
-    private static Map<Long, Pizza> pizzaDatabase = new HashMap<>();
-    private long orderIdCounter = 1;
+    private final PizzaRepository pizzaRepository;
+    private final RestTemplate restTemplate;
 
-    public PizzaService() {
-        // Заполняем базу данных пицц
-        pizzaDatabase.put(1L, new Pizza(1L, "Маргарита", "Сочная пицца с помидорами и сыром", 10.0, 5));
-        pizzaDatabase.put(2L, new Pizza(2L, "Пепперони", "Острая пицца с колбасой пепперони", 12.0, 3));
-    }
 
-    public static PizzaResponseDTO getMenu() {
-        // Получаем список пицц из базы данных
-        return new PizzaResponseDTO(new HashMap<>(pizzaDatabase));
-    }
-
-    public PizzaResponseDTO getPizzaById(Long id) {
+    public Pizza getPizzaById(Integer id) {
         // Получаем информацию о конкретной пицце по ее идентификатору
-        Pizza pizza = pizzaDatabase.get(id);
-        if (pizza != null) {
-            return new PizzaResponseDTO(pizza);
-        }
-        return null;
+        Pizza pizza = pizzaRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Не найдена пицца по id = " + id));
+
+        return pizza;
     }
 
-    public PizzaResponseDTO startCooking() {
+    public void doCook(OrderForKitchenDTO order) {
+        for (Integer pizzaId : order.getPizzaList()) {
+            Pizza pizza = getPizzaById(pizzaId);
+            pizza.setQuantity(pizza.getQuantity() - 1);
+            pizzaRepository.save(pizza);
+        }
         // Запускаем процесс готовки пиццы
-        return new PizzaResponseDTO("Готовим вашу пиццу, ожидайте!");
+        changeOrderStatus(order.getId(), "COOKING");
     }
 
-    public PizzaResponseDTO increasePizzaQuantity(Long pizzaId) {
+    private void changeOrderStatus(int id, String status) {
+        restTemplate.postForEntity(
+                URI.create(String.format("http://localhost:8081/order/%d/%s", id, status)),
+                null,
+                null
+        );
+    }
+
+    public void increasePizzaQuantity(Integer pizzaId) {
         // Увеличиваем количество пиццы на складе
-        Pizza pizza = pizzaDatabase.get(pizzaId);
-        if (pizza != null) {
-            pizza.setQuantity(pizza.getQuantity() + 1);
-            return new PizzaResponseDTO(pizza);
-        }
-        return null;
+        pizzaRepository.increasePizzaCount(pizzaId, 10);
     }
 
-    public PizzaResponseDTO notifyOrderReady(Long orderId) {
-        // Уведомляем о том, что заказ готов
-        orderIdCounter++;
-        return new PizzaResponseDTO("Заказ №" + orderId + " готов к выдаче!");
+
+    public PizzaListDTO getMenu() {
+        List<Pizza> pizzas = pizzaRepository.findAll();
+        List<PizzaResponseDTO> list = pizzas.stream().map(x -> PizzaMapper.INSTANCE.toDTO(x)).toList();
+        return new PizzaListDTO(list);
     }
+
+
 }

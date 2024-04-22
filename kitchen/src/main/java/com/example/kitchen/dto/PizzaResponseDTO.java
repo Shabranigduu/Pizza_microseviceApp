@@ -1,18 +1,14 @@
 package com.example.kitchen.dto;
+
+import lombok.Data;
+
 import java.util.Map;
+
+@Data
 public class PizzaResponseDTO {
 
-    private Object data;
+    private Integer id;
+    private String name;
+    private Integer quantity;
 
-    public PizzaResponseDTO(Object data) {
-        this.data = data;
-    }
-
-    public Object getData() {
-        return data;
-    }
-
-    public void setData(Object data) {
-        this.data = data;
-    }
 }
