@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="Add endpoint, methods in service layer">
-      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/service/PizzaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/service/PizzaService.java" afterDir="false" />
+    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="Add javadoc">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +54,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Docker.Dockerfile.executor": "Run",
+    "Docker.compose.yaml: Compose Deployment.executor": "Run",
     "JUnit.PizzaControllerTest.executor": "Run",
     "JUnit.PizzaControllerTest.getMenuSuccess.executor": "Run",
     "Maven.Pizza_microseviceApp [clean,package].executor": "Run",
@@ -201,13 +204,26 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
       <deployment type="dockerfile" />
+      <method v="2" />
+    </configuration>
+    <configuration name="compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="compose.yaml" />
+        </settings>
+      </deployment>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="Docker.compose.yaml: Compose Deployment" />
         <item itemvalue="JUnit.PizzaControllerTest.getMenuSuccess" />
         <item itemvalue="JUnit.PizzaControllerTest" />
       </list>
@@ -237,7 +253,7 @@
       <workItem from="1713606932256" duration="18735000" />
       <workItem from="1713775058549" duration="8220000" />
       <workItem from="1713854912373" duration="1202000" />
-      <workItem from="1713892685557" duration="5521000" />
+      <workItem from="1713892685557" duration="7554000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1712150661355</created>
@@ -318,7 +334,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713961667916</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add javadoc">
+      <option name="closed" value="true" />
+      <created>1713961847437</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713961847437</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,6 +370,7 @@
     <MESSAGE value="Исправил название пакета на service" />
     <MESSAGE value="commit 2" />
     <MESSAGE value="Add endpoint, methods in service layer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add endpoint, methods in service layer" />
+    <MESSAGE value="Add javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add javadoc" />
   </component>
 </project>
