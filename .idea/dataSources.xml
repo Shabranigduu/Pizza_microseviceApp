@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="authorization@localhost" uuid="a68eb095-549b-4c45-87c3-49b2b3e74400">
+    <data-source source="LOCAL" name="kitchen@localhost" uuid="a68eb095-549b-4c45-87c3-49b2b3e74400">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/authorization</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:54322/kitchen</jdbc-url>
       <jdbc-additional-properties>
         <property name="com.intellij.clouds.kubernetes.db.enabled" value="false" />
       </jdbc-additional-properties>
