@@ -36,10 +36,10 @@ public class PizzaService {
             pizzaRepository.save(pizza);
         }
         // Запускаем процесс готовки пиццы
-        return changeOrderStatus(order.getId(), "готовится");
+        return changeOrderStatus(order.getId());
     }
 
-    private OrderDTO changeOrderStatus(int id, String status) {
+    private OrderDTO changeOrderStatus(int id) {
         URI uri = UriComponentsBuilder.fromHttpUrl("http://localhost:8081/order/set_state/"+id)
                 .queryParam("state", "готовится")
                 .build().encode().toUri();

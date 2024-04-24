@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="commit 2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/controller/PizzaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/controller/PizzaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/entity/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/entity/Pizza.java" afterDir="false" />
+    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="Add endpoint, methods in service layer">
       <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/service/PizzaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/service/PizzaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kitchen/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +63,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "Spring Boot.AuthorizationApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
@@ -241,7 +237,7 @@
       <workItem from="1713606932256" duration="18735000" />
       <workItem from="1713775058549" duration="8220000" />
       <workItem from="1713854912373" duration="1202000" />
-      <workItem from="1713892685557" duration="5202000" />
+      <workItem from="1713892685557" duration="5521000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1712150661355</created>
@@ -314,7 +310,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713766664952</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add endpoint, methods in service layer">
+      <option name="closed" value="true" />
+      <created>1713961667916</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713961667916</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,6 +345,7 @@
     <MESSAGE value="Добавил тесты постмана" />
     <MESSAGE value="Исправил название пакета на service" />
     <MESSAGE value="commit 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 2" />
+    <MESSAGE value="Add endpoint, methods in service layer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add endpoint, methods in service layer" />
   </component>
 </project>

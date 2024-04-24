@@ -28,7 +28,14 @@ public class PizzaController {
         return pizzaService.getMenu();
     }
 
-
+    /**
+     * POST запрос на исполнение заказа от order_management.
+     * Метод принимает JSON-объект с информацией о заказе для кухни и возвращает информацию о статусе заказа.
+     * Если пицца для заказа отсутствует в базе данных, обрабатывает исключение с помощью Exception Handler.
+     *
+     * @param order JSON-объект с информацией о заказе для кухни
+     * @return информация о статусе заказа
+     */
     @PostMapping("/do_cook")
     //POST запрос на исполнение заказа от order_management (возвратить статус заказа, обработать исключение если нет пиццы в БД Exception Handler)
     public OrderDTO doCook(@RequestBody OrderForKitchenDTO order) {
@@ -36,11 +43,24 @@ public class PizzaController {
 
     }
 
+    /**
+     * POST запрос для добавления пиццы, если она отсутствует в базе данных.
+     * Метод принимает ID пиццы в качестве параметра и увеличивает количество этой пиццы в базе данных.
+     *
+     * @param pizzaId ID пиццы, которую необходимо добавить
+     */
     @PostMapping()
     public void addPizzas(@RequestBody Integer pizzaId) { //добавить пиццу если не хватает в БД
         pizzaService.increasePizzaQuantity(pizzaId);
     }
 
+    /**
+     * GET запрос для получения информации о пицце по её идентификатору.
+     * Метод принимает ID пиццы в качестве пути и возвращает информацию о пицце с указанным ID.
+     *
+     * @param pizzaId Идентификатор пиццы
+     * @return Объект класса Pizza с информацией о пицце
+     */
     @GetMapping("/{pizzaId}")
     public Pizza getPizzaById(@PathVariable Integer pizzaId) { // вернуть инфо по каждой пицце
         return pizzaService.getPizzaById(pizzaId);
