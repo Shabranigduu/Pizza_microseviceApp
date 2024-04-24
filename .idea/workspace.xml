@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="Change doCook method, create test">
+    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="Small fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -264,7 +264,7 @@
       <workItem from="1713606932256" duration="18735000" />
       <workItem from="1713775058549" duration="8220000" />
       <workItem from="1713854912373" duration="1202000" />
-      <workItem from="1713892685557" duration="20888000" />
+      <workItem from="1713892685557" duration="22263000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1712150661355</created>
@@ -369,7 +369,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713986034911</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Small fixes">
+      <option name="closed" value="true" />
+      <created>1713986102513</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1713986102513</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,8 +406,8 @@
     <MESSAGE value="commit 2" />
     <MESSAGE value="Add endpoint, methods in service layer" />
     <MESSAGE value="Add javadoc" />
-    <MESSAGE value="Small fixes" />
     <MESSAGE value="Change doCook method, create test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change doCook method, create test" />
+    <MESSAGE value="Small fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small fixes" />
   </component>
 </project>
