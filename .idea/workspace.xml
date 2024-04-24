@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="Исправил название пакета на service">
+    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="commit 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kitchen/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/controller/PizzaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/controller/PizzaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/dto/PizzaResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/dto/PizzaResponseDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/entity/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/entity/Pizza.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/mapper/PizzaMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/mapper/PizzaMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/repository/PizzaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/repository/PizzaRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/service/PizzaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/service/PizzaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +56,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.Dockerfile.executor": "Run",
     "JUnit.PizzaControllerTest.executor": "Run",
     "JUnit.PizzaControllerTest.getMenuSuccess.executor": "Run",
     "Maven.Pizza_microseviceApp [clean,package].executor": "Run",
@@ -76,7 +75,7 @@
     "git-widget-placeholder": "kitchen",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Projects/Pizza_microseviceApp",
+    "last_opened_file_path": "D:/Projects/Aston/Laboratory",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -96,11 +95,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\Pizza_microseviceApp\kitchen\src\main\resources\db" />
       <recent name="C:\MyProjects\Pizza_microseviceApp\order_management\src\main\resources" />
       <recent name="C:\MyProjects\Pizza_microseviceApp\logistic\src\main\resources" />
       <recent name="C:\MyProjects\Pizza_microseviceApp\kitchen\src\main\resources" />
       <recent name="C:\MyProjects\Pizza_microseviceApp\feedback\src\main\resources" />
-      <recent name="C:\MyProjects\Pizza_microseviceApp\authorization\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Denis\Pizza_microseviceApp\postman" />
@@ -131,7 +130,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PizzaControllerTest">
+  <component name="RunManager" selected="Docker.Dockerfile">
     <configuration name="PizzaControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kitchen" />
       <extension name="coverage">
@@ -198,10 +197,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PizzaControllerTest" />
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="JUnit.PizzaControllerTest.getMenuSuccess" />
+        <item itemvalue="JUnit.PizzaControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +238,10 @@
       <workItem from="1713015579192" duration="11520000" />
       <workItem from="1713297792529" duration="25000" />
       <workItem from="1713298203834" duration="47000" />
-      <workItem from="1713606932256" duration="13716000" />
+      <workItem from="1713606932256" duration="18735000" />
+      <workItem from="1713775058549" duration="8220000" />
+      <workItem from="1713854912373" duration="1202000" />
+      <workItem from="1713892685557" duration="5202000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1712150661355</created>
@@ -291,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712167824444</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="commit 2">
+      <option name="closed" value="true" />
+      <created>1713766664952</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713766664952</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,6 +340,7 @@
     <MESSAGE value="Добавил основные классы модуля авторизации" />
     <MESSAGE value="Добавил тесты постмана" />
     <MESSAGE value="Исправил название пакета на service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправил название пакета на service" />
+    <MESSAGE value="commit 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 2" />
   </component>
 </project>
