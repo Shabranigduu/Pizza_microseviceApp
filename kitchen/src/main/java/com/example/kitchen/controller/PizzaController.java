@@ -3,7 +3,7 @@ package com.example.kitchen.controller;
 import com.example.kitchen.dto.OrderDTO;
 import com.example.kitchen.dto.OrderForKitchenDTO;
 import com.example.kitchen.dto.PizzaListDTO;
-import com.example.kitchen.entity.Pizza;
+import com.example.kitchen.dto.PizzaResponseDTO;
 import com.example.kitchen.service.PizzaService;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,7 +23,7 @@ public class PizzaController {
      * @return DTO объект, содержащий список доступных пицц
      */
     @GetMapping(value = "/menu")
-    //GET запрос меню в базу данных кухни перед началом исполнения заказа (из Postman)
+    //GET запрос меню в базу данных кухни перед началом исполнения заказа, так сервис заказов узнает какие пиццы есть в меню
     public PizzaListDTO getMenu() {
         return pizzaService.getMenu();
     }
@@ -50,8 +50,9 @@ public class PizzaController {
      * @param pizzaId ID пиццы, которую необходимо добавить
      */
     @PostMapping()
-    public void addPizzas(@RequestBody Integer pizzaId) { //добавить пиццу если не хватает в БД
+    public void addPizzas(@RequestBody Integer pizzaId) {
         pizzaService.increasePizzaQuantity(pizzaId);
+        //Вернется ли статус 200?
     }
 
     /**
@@ -62,7 +63,7 @@ public class PizzaController {
      * @return Объект класса Pizza с информацией о пицце
      */
     @GetMapping("/{pizzaId}")
-    public Pizza getPizzaById(@PathVariable Integer pizzaId) { // вернуть инфо по каждой пицце
+    public PizzaResponseDTO getPizzaById(@PathVariable Integer pizzaId) {
         return pizzaService.getPizzaById(pizzaId);
     }
 }

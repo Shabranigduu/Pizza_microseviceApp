@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="Add javadoc">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="Small fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/controller/PizzaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/controller/PizzaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/dto/PizzaResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/dto/PizzaResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/repository/PizzaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/repository/PizzaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/service/PizzaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/service/PizzaService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +60,7 @@
     "Docker.compose.yaml: Compose Deployment.executor": "Run",
     "JUnit.PizzaControllerTest.executor": "Run",
     "JUnit.PizzaControllerTest.getMenuSuccess.executor": "Run",
+    "JUnit.java in kitchen.executor": "Run",
     "Maven.Pizza_microseviceApp [clean,package].executor": "Run",
     "Maven.kitchen [clean,compile].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -68,13 +72,14 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "Spring Boot.AuthorizationApplication.executor": "Run",
+    "Spring Boot.KitchenApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "kitchen",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Projects/Aston/Laboratory",
+    "last_opened_file_path": "D:/Projects/Pizza_microseviceApp/kitchen/src/main/resources/db/Create_pizza_table.sql",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -129,22 +134,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
-    <configuration name="PizzaControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kitchen" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.kitchen.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.kitchen.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.example.kitchen.controller.PizzaControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PizzaServiceTest.getPizzaById_success">
     <configuration name="PizzaControllerTest.getMenuSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kitchen" />
       <extension name="coverage">
@@ -157,6 +147,30 @@
       <option name="MAIN_CLASS_NAME" value="com.example.kitchen.controller.PizzaControllerTest" />
       <option name="METHOD_NAME" value="getMenuSuccess" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PizzaServiceTest.getPizzaById_success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kitchen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.kitchen.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.kitchen.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.kitchen.controller.PizzaServiceTest" />
+      <option name="METHOD_NAME" value="getPizzaById_success" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in kitchen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kitchen" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/kitchen/src/test/java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -222,10 +236,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PizzaServiceTest.getPizzaById_success" />
+        <item itemvalue="JUnit.java in kitchen" />
         <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Docker.compose.yaml: Compose Deployment" />
         <item itemvalue="JUnit.PizzaControllerTest.getMenuSuccess" />
-        <item itemvalue="JUnit.PizzaControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +268,7 @@
       <workItem from="1713606932256" duration="18735000" />
       <workItem from="1713775058549" duration="8220000" />
       <workItem from="1713854912373" duration="1202000" />
-      <workItem from="1713892685557" duration="7554000" />
+      <workItem from="1713892685557" duration="20656000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1712150661355</created>
@@ -342,7 +357,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713961847437</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Small fixes">
+      <option name="closed" value="true" />
+      <created>1713963827093</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1713963827093</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,6 +394,7 @@
     <MESSAGE value="commit 2" />
     <MESSAGE value="Add endpoint, methods in service layer" />
     <MESSAGE value="Add javadoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add javadoc" />
+    <MESSAGE value="Small fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small fixes" />
   </component>
 </project>
