@@ -1,9 +1,6 @@
 package com.example.kitchen.controller;
 
-import com.example.kitchen.dto.OrderDTO;
-import com.example.kitchen.dto.OrderForKitchenDTO;
-import com.example.kitchen.dto.PizzaListDTO;
-import com.example.kitchen.dto.PizzaResponseDTO;
+import com.example.kitchen.dto.*;
 import com.example.kitchen.service.PizzaService;
 import org.springframework.web.bind.annotation.*;
 
@@ -49,10 +46,15 @@ public class PizzaController {
      *
      * @param pizzaId ID пиццы, которую необходимо добавить
      */
-    @PostMapping()
-    public void addPizzas(@RequestBody Integer pizzaId) {
+    @PostMapping("/{pizzaId}")
+    public void increasePizzaQuantity(@PathVariable Integer pizzaId) {
         pizzaService.increasePizzaQuantity(pizzaId);
-        //Вернется ли статус 200?
+
+    }
+
+    @PostMapping
+    public PizzaResponseDTO addPizza(@RequestBody PizzaRequestDTO pizzaRequestDTO){
+        return pizzaService.addPizza(pizzaRequestDTO);
     }
 
     /**

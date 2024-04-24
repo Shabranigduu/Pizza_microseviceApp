@@ -1,9 +1,6 @@
 package com.example.kitchen.service;
 
-import com.example.kitchen.dto.OrderDTO;
-import com.example.kitchen.dto.OrderForKitchenDTO;
-import com.example.kitchen.dto.PizzaListDTO;
-import com.example.kitchen.dto.PizzaResponseDTO;
+import com.example.kitchen.dto.*;
 import com.example.kitchen.entity.Pizza;
 import com.example.kitchen.exception.NotEnoughPizzasAvailableException;
 import com.example.kitchen.exception.NotFoundException;
@@ -20,6 +17,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 import java.net.URI;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -78,14 +76,27 @@ public class PizzaService {
         return null;
     }
 
-    public void increasePizzaQuantity(Integer pizzaId) {
-        // Увеличиваем количество пиццы на складе
-        pizzaRepository.increasePizzaCount(pizzaId, 10);
+    public void increasePizzaQuantity(Integer pizzaId) {       // Увеличиваем количество пиццы на складе
+        Optional<Pizza> optionalPizza = pizzaRepository.findById(pizzaId);
+        if(optionalPizza.isEmpty()){
+            throw new PizzaNotFoundException("pizza with id="+pizzaId+" not found");
+        }
+        Pizza pizza = optionalPizza.get();
+        pizza.setQuantity(pizza.getQuantity()+10);
+        pizzaRepository.save(pizza);
     }
 
     public PizzaListDTO getMenu() {
         List<Pizza> pizzas = pizzaRepository.findAll();
         List<PizzaResponseDTO> list = pizzas.stream().map(PizzaMapper.INSTANCE::toDTO).toList();
         return new PizzaListDTO(list);
+    }
+
+    public PizzaResponseDTO addPizza(PizzaRequestDTO pizzaRequestDTO) {
+        Pizza pizza = Pizza.builder()
+                .name(pizzaRequestDTO.getName())
+                .quantity(10)
+                .build();
+        return PizzaMapper.INSTANCE.toDTO(pizzaRepository.save(pizza));
     }
 }

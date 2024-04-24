@@ -1,19 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="IU-233.14475.28">
-    <data-source name="kitchen@localhost" uuid="a68eb095-549b-4c45-87c3-49b2b3e74400">
-      <database-info product="PostgreSQL" version="15.6" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.6.0" dbms="POSTGRES" exact-version="15.6" exact-driver-version="42.6">
+  <component name="dataSourceStorageLocal" created-in="IU-221.5787.30">
+    <data-source name="authorization@localhost" uuid="a68eb095-549b-4c45-87c3-49b2b3e74400">
+      <database-info product="PostgreSQL" version="16.0" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.6.0" dbms="POSTGRES" exact-version="16.0" exact-driver-version="42.6">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
-      <user-name>postgres</user-name>
+      <secret-storage>master_key</secret-storage>
+      <user-name>user</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="database" qname="@">
-            <node kind="schema" qname="@" />
+          <node kind="database" qname="authorization">
+            <node kind="schema" qname="public" />
           </node>
         </introspection-scope>
       </schema-mapping>
+    </data-source>
+    <data-source name="order_management@localhost" uuid="f0c54b12-dd9b-4465-b1ee-9b7fd793501a">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <schema-mapping />
+    </data-source>
+    <data-source name="authorization/Hibernate" uuid="b567c283-793b-4a16-ad91-7799f0b4d164">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <schema-mapping />
+    </data-source>
+    <data-source name="logistic/Hibernate" uuid="727dc0fc-aed3-4edc-90ad-ffa9f9652df1">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <schema-mapping />
+    </data-source>
+    <data-source name="kitchen/Hibernate" uuid="8612955d-685a-4c3e-9105-8e27748c42ad">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <schema-mapping />
+    </data-source>
+    <data-source name="order_management/Hibernate" uuid="fd17dbff-1841-4bbb-8f66-8c586f3877cc">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <schema-mapping />
+    </data-source>
+    <data-source name="feedback/Hibernate" uuid="42c5e8f1-5da6-4e3e-b0c4-818f12e0176f">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <schema-mapping />
     </data-source>
   </component>
 </project>

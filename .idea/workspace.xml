@@ -5,25 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="- Добавил основные запросы контроллера и бизнесс-логику&#10;- Добавил запрос пользователя из слоя авторизации&#10;- Добавил маппер&#10;- Добавил перехватчик исключений">
-      <change afterPath="$PROJECT_DIR$/authorization/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authorization/create_db.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order_management/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order_management/src/main/resources/application-local.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order_management/src/test/java/com/example/order_management/service/OrderServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/dto/PizzaRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authorization/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/authorization/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feedback/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/feedback/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feedback/src/test/java/com/example/feedback/FeedbackApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feedback/src/test/java/com/example/feedback/controller/ReviewControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feedback/src/test/java/com/example/feedback/mapper/ReviewMapperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feedback/src/test/java/com/example/feedback/service/ReviewServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/controller/PizzaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/controller/PizzaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/service/PizzaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/service/PizzaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order_management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/OrderManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/OrderManagementApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/dto/OrderRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/dto/OrderRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/repository/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/java/com/example/order_management/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order_management/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order_management/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +31,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -45,7 +42,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="feedback" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -101,13 +98,13 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/MyProjects/A-money/authentication-service",
+    "last_opened_file_path": "C:/MyProjects/Pizza_microseviceApp/kitchen",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3091954",
     "run.configurations.included.in.services": "true",
@@ -123,11 +120,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MyProjects\Pizza_microseviceApp\kitchen" />
       <recent name="C:\MyProjects\Pizza_microseviceApp\order_management\src\main\java\com\example\order_management" />
       <recent name="C:\MyProjects\Pizza_microseviceApp\order_management\src\main\resources" />
       <recent name="C:\MyProjects\Pizza_microseviceApp\logistic\src\main\resources" />
       <recent name="C:\MyProjects\Pizza_microseviceApp\kitchen\src\main\resources" />
-      <recent name="C:\MyProjects\Pizza_microseviceApp\feedback\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Denis\Pizza_microseviceApp\postman" />
@@ -158,19 +155,79 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderManagementApplication">
-    <configuration name="OrderServiceTest.getExistUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="order_management" />
+  <component name="RunManager" selected="JUnit.ReviewControllerTest.testCreateReviewWithNullInput">
+    <configuration name="FeedbackApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="feedback" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.order_management.service.*" />
+          <option name="PATTERN" value="com.example.feedback.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.order_management.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.order_management.service.OrderServiceTest" />
-      <option name="METHOD_NAME" value="getExistUser" />
+      <option name="PACKAGE_NAME" value="com.example.feedback" />
+      <option name="MAIN_CLASS_NAME" value="com.example.feedback.FeedbackApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReviewControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="feedback" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.feedback.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.feedback.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.feedback.controller.ReviewControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReviewControllerTest.testCreateReviewWithNullInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="feedback" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.feedback.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.feedback.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.feedback.controller.ReviewControllerTest" />
+      <option name="METHOD_NAME" value="testCreateReviewWithNullInput" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReviewMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="feedback" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.feedback.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.feedback.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.example.feedback.mapper.ReviewMapperTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReviewServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="feedback" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.feedback.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.feedback.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.feedback.service.ReviewServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -211,17 +268,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-      <item itemvalue="JUnit.OrderServiceTest.getExistUser" />
+      <item itemvalue="JUnit.FeedbackApplicationTests" />
+      <item itemvalue="JUnit.ReviewControllerTest" />
+      <item itemvalue="JUnit.ReviewControllerTest.testCreateReviewWithNullInput" />
+      <item itemvalue="JUnit.ReviewMapperTest" />
+      <item itemvalue="JUnit.ReviewServiceImplTest" />
       <item itemvalue="Spring Boot.AuthorizationApplication" />
       <item itemvalue="Spring Boot.FeedbackApplication" />
       <item itemvalue="Spring Boot.KitchenApplication" />
@@ -230,8 +282,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="JUnit.OrderServiceTest.getExistUser" />
+        <item itemvalue="JUnit.ReviewControllerTest.testCreateReviewWithNullInput" />
+        <item itemvalue="JUnit.ReviewMapperTest" />
+        <item itemvalue="JUnit.ReviewServiceImplTest" />
+        <item itemvalue="JUnit.FeedbackApplicationTests" />
+        <item itemvalue="JUnit.ReviewControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -366,5 +421,10 @@
     <MESSAGE value="Исправил название пакета на service" />
     <MESSAGE value="- Добавил основные запросы контроллера и бизнесс-логику&#10;- Добавил запрос пользователя из слоя авторизации&#10;- Добавил маппер&#10;- Добавил перехватчик исключений" />
     <option name="LAST_COMMIT_MESSAGE" value="- Добавил основные запросы контроллера и бизнесс-логику&#10;- Добавил запрос пользователя из слоя авторизации&#10;- Добавил маппер&#10;- Добавил перехватчик исключений" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Pizza_microseviceApp$OrderServiceTest.ic" NAME="OrderServiceTest Coverage Results" MODIFIED="1713779033092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.order_management.service.*</FILTER>
+    </SUITE>
   </component>
 </project>

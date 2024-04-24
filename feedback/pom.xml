@@ -71,6 +71,8 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>3.2.4</version>
                 <configuration>
+                    <mainClass>com.example.feedback.FeedbackApplication</mainClass>
+                    <layout>JAR</layout>
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>
@@ -78,6 +80,13 @@
                         </exclude>
                     </excludes>
                 </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
