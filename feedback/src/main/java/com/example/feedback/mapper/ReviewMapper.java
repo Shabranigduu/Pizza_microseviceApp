@@ -12,19 +12,19 @@ import java.util.stream.Collectors;
 @Component
 public class ReviewMapper {
 
-    private final ReviewService reviewService;
-
-    @Autowired
-    public ReviewMapper(ReviewService reviewService) {
-        this.reviewService = reviewService;
-    }
+//    private final ReviewService reviewService;
+//
+//    @Autowired
+//    public ReviewMapper(ReviewService reviewService) {
+//        this.reviewService = reviewService;
+//    }
 
     public ReviewDto toReviewDto(Review review) {
-        return new ReviewDto(review.getId(), review.getTitle(), review.getOrderId(), review.isGrade(), review.getDescription());
+        return new ReviewDto(review.getId(), review.getTitle(), review.getOrderId(), review.getUserId(), review.isGrade(), review.getDescription());
     }
 
     public Review toReviewEntity(ReviewDto reviewDto) {
-        return new Review(reviewDto.getId(), reviewDto.getTitle(), reviewDto.getOrderId(), reviewDto.isGrade(), reviewDto.getDescription()
+        return new Review(reviewDto.getId(), reviewDto.getTitle(), reviewDto.getOrderId(), reviewDto.getUserId(), reviewDto.isGrade(), reviewDto.getDescription()
         );
     }
 

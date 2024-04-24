@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "fd2d772a-ed42-4384-9054-d512bb790e83",
+		"name": "feedback",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27879034"
+	},
+	"item": [
+		{
+			"name": "Creat  Review",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n        \"title\": \"Good\",\r\n        \"orderId\": 1,\r\n        \"userId\": 1,\r\n        \"grade\": true,\r\n        \"description\": \"Thank you, everything is great! Arrived on time, the pizza was amazing!!\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/review",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"review"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creat  Review 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"title\": \"Badly!\",\r\n        \"orderId\": 3,\r\n        \"userId\": 2,\r\n        \"grade\": false,\r\n        \"description\": \"Everything is very bad, long delivery and tasteless and cold pizza...\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/review",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"review"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creat  Review  3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"title\": \"Badly!\",\r\n        \"orderId\": 2,\r\n        \"userId\": 1,\r\n        \"grade\": false,\r\n        \"description\": \"Everything is very bad, long delivery and tasteless and cold pizza...!\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/review",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"review"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creat  Review  4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"title\": \"Good\",\r\n        \"orderId\": 4,\r\n        \"userId\": 2,\r\n        \"grade\": true,\r\n        \"description\": \"Thank you, everything is great! Arrived on time, the pizza was amazing!!\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/review",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"review"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Reviews By User Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/review/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"review",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Reviews",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/review",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"review"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Reviews By User Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/review",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"review"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

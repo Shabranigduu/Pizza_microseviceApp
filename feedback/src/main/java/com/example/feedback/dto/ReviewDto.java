@@ -13,6 +13,7 @@ public class ReviewDto {
     private int id;
     private String title;
     private  int orderId;
+    private  int userId;
     private boolean grade;
     private String description;
     
