@@ -6,6 +6,7 @@
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
       <schema-mapping>
         <introspection-scope>
@@ -14,6 +15,23 @@
           </node>
         </introspection-scope>
       </schema-mapping>
+    </data-source>
+    <data-source name="logistic@localhost" uuid="2f5a7b27-99ed-491b-9b0f-c1ca0c88f436">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
+      <schema-mapping />
+    </data-source>
+    <data-source name="authorization@localhost" uuid="627ad18f-8ca1-4afd-8353-5950afd27939">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
+      <user-name>user</user-name>
+      <schema-mapping />
+    </data-source>
+    <data-source name="feedback@localhost" uuid="56a178a0-8c2f-42b6-b06f-dae1c69dbe31">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
+      <schema-mapping />
+    </data-source>
+    <data-source name="order_management@localhost" uuid="9b864319-8d65-4bd3-b0b8-fb889bbfdf1d">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
+      <schema-mapping />
     </data-source>
   </component>
 </project>

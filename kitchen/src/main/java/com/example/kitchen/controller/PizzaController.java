@@ -7,6 +7,8 @@ import com.example.kitchen.dto.PizzaResponseDTO;
 import com.example.kitchen.service.PizzaService;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Map;
+
 @RestController
 @RequestMapping("/pizza")
 public class PizzaController {
@@ -50,9 +52,8 @@ public class PizzaController {
      * @param pizzaId ID пиццы, которую необходимо добавить
      */
     @PostMapping()
-    public void addPizzas(@RequestBody Integer pizzaId) {
-        pizzaService.increasePizzaQuantity(pizzaId);
-        //Вернется ли статус 200?
+    public void addPizzas(@RequestBody Map<String,Integer> pizzaId) {
+        pizzaService.increasePizzaQuantity(pizzaId.get("pizzaId"));
     }
 
     /**

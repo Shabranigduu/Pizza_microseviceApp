@@ -11,6 +11,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class OrderForKitchenDTO {
 
-    private int id;
+    private Integer id;
     private List<Integer> pizzaList;
 }

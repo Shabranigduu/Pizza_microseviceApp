@@ -6,12 +6,11 @@ import com.example.kitchen.dto.PizzaListDTO;
 import com.example.kitchen.dto.PizzaResponseDTO;
 import com.example.kitchen.entity.Pizza;
 import com.example.kitchen.exception.NotEnoughPizzasAvailableException;
-import com.example.kitchen.exception.NotFoundException;
 import com.example.kitchen.exception.PizzaNotFoundException;
 import com.example.kitchen.mapper.PizzaMapper;
 import com.example.kitchen.repository.PizzaRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -40,15 +39,6 @@ public class PizzaService {
 
     public OrderDTO doCook(OrderForKitchenDTO order) {
 
-        /*-посчитать какое количество каких пицц заказано;
-          -сравнить количество пицц с пиццами в БД
-          -если пицц в БД меньше, выкинуть исключение Exception Handler, разобраться как он работает
-          -создать свою ошибку, добавить в Exception Handler
-          -при выбрасывании ошибки Handler отправит ResponseEntity указанный в Handler c статусом и сообщением
-          -дали совет сделать логику через List stream, сделать группировку по id
-          -в каждом методе внутри стрима сделать запрос из БД, получить кол-во пицц по этому id и там сравнить
-
-         */
         Map<Integer, Long> pizzaMap = order.getPizzaList().stream()
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
         pizzaMap.keySet().forEach(pizzaId -> {
@@ -78,6 +68,7 @@ public class PizzaService {
         return null;
     }
 
+    @Transactional
     public void increasePizzaQuantity(Integer pizzaId) {
         // Увеличиваем количество пиццы на складе
         pizzaRepository.increasePizzaCount(pizzaId, 10);

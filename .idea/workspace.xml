@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cefc9891-eefd-4425-a423-8375aa12040a" name="Changes" comment="Small fixes">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/controller/PizzaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/controller/PizzaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/dto/OrderForKitchenDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/dto/OrderForKitchenDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/exception/ErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/exception/ErrorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/repository/PizzaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/repository/PizzaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/service/PizzaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/service/PizzaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitchen/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/kitchen/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +60,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Docker.Dockerfile.executor": "Run",
+    "Docker.compose.yaml.db: Compose Deployment.executor": "Run",
     "Docker.compose.yaml: Compose Deployment.executor": "Run",
     "JUnit.PizzaControllerTest.executor": "Run",
     "JUnit.PizzaControllerTest.getMenuSuccess.executor": "Run",
@@ -68,7 +77,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "Spring Boot.AuthorizationApplication.executor": "Run",
-    "Spring Boot.KitchenApplication.executor": "Run",
+    "Spring Boot.KitchenApplication.executor": "Debug",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
@@ -131,22 +140,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.KitchenApplication">
-    <configuration name="PizzaControllerTest.getMenuSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kitchen" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.kitchen.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.kitchen.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.example.kitchen.controller.PizzaControllerTest" />
-      <option name="METHOD_NAME" value="getMenuSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PizzaServiceTest.getPizzaById_success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kitchen" />
       <extension name="coverage">
@@ -215,11 +208,15 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -230,13 +227,38 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="compose.yaml.db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.compose.yaml.db: Compose Deployment" />
+      <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="Docker.compose.yaml: Compose Deployment" />
+      <item itemvalue="JUnit.PizzaServiceTest.getPizzaById_success" />
+      <item itemvalue="JUnit.java in kitchen" />
+      <item itemvalue="Spring Boot.AuthorizationApplication" />
+      <item itemvalue="Spring Boot.FeedbackApplication" />
+      <item itemvalue="Spring Boot.KitchenApplication" />
+      <item itemvalue="Spring Boot.LogisticApplication" />
+      <item itemvalue="Spring Boot.OrderManagementApplication" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.compose.yaml.db: Compose Deployment" />
+        <item itemvalue="Docker.compose.yaml: Compose Deployment" />
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="JUnit.PizzaServiceTest.getPizzaById_success" />
         <item itemvalue="JUnit.java in kitchen" />
-        <item itemvalue="Docker.Dockerfile" />
-        <item itemvalue="Docker.compose.yaml: Compose Deployment" />
-        <item itemvalue="JUnit.PizzaControllerTest.getMenuSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -265,6 +287,7 @@
       <workItem from="1713775058549" duration="8220000" />
       <workItem from="1713854912373" duration="1202000" />
       <workItem from="1713892685557" duration="22263000" />
+      <workItem from="1714074313449" duration="3089000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1712150661355</created>
@@ -409,5 +432,16 @@
     <MESSAGE value="Change doCook method, create test" />
     <MESSAGE value="Small fixes" />
     <option name="LAST_COMMIT_MESSAGE" value="Small fixes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/kitchen/src/main/java/com/example/kitchen/controller/PizzaController.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
